@@ -11,12 +11,13 @@ print(dog1.die())
 Goldie = AFish("Goldfish", "Golden", "Pacific Ocean")
 print(Goldie.move())
 print(Goldie.eat())
-print(f"Fish 1 lives in the {Goldie.region}")
+print(f"{Goldie.type} live in the {Goldie.region}")
 print(Goldie.jump())
 
 Birdie = Bird("7cm", "North Carolina", "Black", "Blackbird")
 print(Birdie.grow())
 print(Birdie.name)
+print(Birdie.eat())
 
 animal_list = [cat1, dog1, Goldie, Birdie]
 print((animal_list[0].name))
