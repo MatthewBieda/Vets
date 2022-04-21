@@ -4,7 +4,6 @@
 from abc import ABC, abstractmethod
 
 #Class definitions
-
 class Animal(ABC):
     #Constructor
     def __init__(self):
@@ -144,24 +143,3 @@ class AFish(Fish):
     def jump(self):
         return(f"{self.type} jump out of the sea and dive back in!")
          
-#Object instantiation 
-
-cat1 = Cat("Allie", 10, "White")
-print(cat1.eat())
-
-dog1 = Dog("Rex", 7, "Red")
-print(dog1.grow())
-print(dog1.die())
-
-Goldie = AFish("Goldfish", "Golden", "Pacific Ocean")
-print(Goldie.move())
-print(Goldie.eat())
-print(f"Fish 1 lives in the {Goldie.region}")
-print(Goldie.jump())
-
-Birdie = Bird("7cm", "North Carolina", "Black", "Blackbird")
-print(Birdie.grow())
-print(Birdie.name)
-
-animal_list = [cat1, dog1, Goldie, Birdie]
-print((animal_list[0].name))
